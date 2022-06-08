@@ -1,9 +1,10 @@
+import sys
+sys.dont_write_bytecode = True
+
 import os
 from pocketsphinx import LiveSpeech
 from module import module_pico
 from module import module_beep
-import sys
-sys.dont_write_bytecode = True
 
 qa_dict = {}
 with open('dictionary/QandA.txt', 'r') as f:
