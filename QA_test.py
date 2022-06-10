@@ -7,7 +7,7 @@ from module import module_pico
 from module import module_beep
 
 qa_dict = {}
-with open('dictionary/QandA.txt', 'r') as f:
+with open('dictionary/test1.txt', 'r') as f:
     qa_list = f.readlines()
     print("----------question list-----------")
     for qa in qa_list:
@@ -18,9 +18,9 @@ with open('dictionary/QandA.txt', 'r') as f:
 # Define path
 file_path = os.path.abspath(__file__)
 test_dic_path = file_path.replace(
-    '/QA_test.py', '/dictionary/QA_sample.dict')
+    '/QA_test.py', '/dictionary/test1.dict')
 test_gram_path = file_path.replace(
-    '/QA_test.py', '/dictionary/QA_sample.gram')
+    '/QA_test.py', '/dictionary/test1.gram')
 
 def QandA():
     while True:

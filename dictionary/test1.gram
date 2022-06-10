@@ -1,0 +1,4 @@
+#JSGF V1.0;
+grammar test1;
+public <rule> = <command>;
+<command> = i like apple | this is a pen | i like apple but don't like pineapple;
